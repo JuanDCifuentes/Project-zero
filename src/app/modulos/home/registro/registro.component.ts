@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class RegistroComponent {
 
+  title = "JOTA-PROTECT"
+
+  UserName: string = "";
+  email: string = "";
+  password: string="";
+
+  registrar(){
+
+    
+
+  }
+
+
+
 }
