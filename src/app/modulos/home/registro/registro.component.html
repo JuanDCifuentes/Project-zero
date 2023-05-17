@@ -28,12 +28,13 @@
     </div>
     <br>
     
+    
     <input type="text" class="style-input-text" name="username" placeholder="Nombre de usuario" />
     <input type="email" class="style-input-text" name="Email" placeholder="Email"  />
     <input  type="password" class="style-input-text" name="password" placeholder="Contraseña" />
 
     <input class="btn-registrar" type="submit" value="registrar" (click)="registrar()" />
-    <span class="login">¿Ya estas registrado?  <a href="#">Login</a></span>
+    <span class="login">¿Ya estas registrado?  <a [routerLink]="['/login']">Login</a></span>
   </form>
   
 </div>
