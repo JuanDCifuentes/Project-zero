@@ -6,6 +6,8 @@ import { ClienteComponent } from './cliente.component';
 import { VisualizarItemComponent } from './visualizar-item/visualizar-item.component';
 import { SugereciasComponent } from './sugerecias/sugerecias.component';
 import { RegistroItemComponent } from './registro-item/registro-item.component';
+import { BarraComponent } from './barra/barra.component';
+
 
 
 @NgModule({
@@ -13,7 +15,8 @@ import { RegistroItemComponent } from './registro-item/registro-item.component';
     ClienteComponent,
     VisualizarItemComponent,
     SugereciasComponent,
-    RegistroItemComponent
+    RegistroItemComponent,
+    BarraComponent
   ],
   imports: [
     CommonModule,

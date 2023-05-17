@@ -1,0 +1,228 @@
+$proporcion : 55% 
+$tamano-input: 100% 
+$color-border: #b7b7b7
+  
+form
+    
+    padding: 6% 11%
+    height: 100%
+
+    width: $proporcion
+
+    background-color: white
+    
+    border-radius: 30px 0 0 30px
+    border: 2px solid black
+
+    align-content: center
+    
+
+    
+    
+    input
+        height: 9%
+        width: $tamano-input //calc( 100% - 50px)
+
+        display: block
+        margin-top: 10px
+        // border-radius: 9px
+        
+        padding: 0 10px 
+        
+
+        font-size: 1.2em
+
+        
+    .login
+        color: #b7b7b7
+        a
+            color: #00ab6b
+   
+
+    .btn-registrar
+
+        margin-top: 50px
+        margin-bottom: 10px
+        cursor: pointer
+        background-color: #00ab6b
+
+        border: none
+        border-radius: 55px
+
+    .btn-registrar:hover
+
+        background-color: #01d588
+
+
+    
+    .titulo-form
+        display: block
+        width: 100%
+        padding-bottom: 40px
+        font-size: 2em
+        text-align: left
+        margin-bottom: 1em
+
+    .accesos-externos
+
+
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+
+
+
+        .acceso
+            display: inline-flex
+            padding: 10px
+            padding-right: 20px
+            width: 45%
+
+            
+
+            border-radius: 50px
+            border: 1px $color-border solid
+            
+            align-items: center
+            justify-content: space-around
+
+            cursor: pointer
+            i
+                //reborder del icono
+                
+                width: 30px
+                height: 30px
+                padding: 5px
+                margin-right: 10px
+
+                font-size: 18px
+                text-align: center
+                line-height: 20px
+
+                
+                border-radius: 50%
+                box-shadow:  0 0 3px #222222d1
+            span
+                display: flexbox
+                font-size: 15px
+        .acceso:hover
+            background-color: #F1F1F1
+            border: 0
+
+        .google
+            i
+                background: white
+                color: black
+                
+
+        .facebook
+            i
+                background-color: #005095
+                color: white
+            
+
+         
+        
+        
+
+
+.contenedor
+    height: 100%
+    padding: 0
+    width: 100%
+
+
+    
+    //
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    position: fixed
+    bottom: 0
+    right: 0
+    
+    //fondo
+    background: url('../../../../assets/astronaut-fondo.jpg')
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+    .separador
+        
+        position: relative
+        height: 24px
+        width: 100%
+        margin: 24px 0 8px
+
+        text-align: center
+
+        // display: inline-flex
+        // flex-direction: column
+        // align-items: center
+
+
+        div
+
+            position: absolute
+            left: 0
+            top: 0
+            height: 24px
+            width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+
+            span
+                font-size: 14px
+                font-weight: 600
+                color: #656f79
+                background: #fff
+                padding: 0 16px
+                line-height: 24px
+                    
+            // width: 30px
+            // height: 30px
+            // position: absolute
+
+            // // top: 43.5%
+            // right: calc( ($proporcion/2) - 15px )
+
+            // background-color: white
+        hr
+            position: absolute
+            top: 12px
+            width: 100%
+            padding: 0
+            margin: 0
+            border-color: #eaeaea
+            border-top: 0 #eaeaea
+            border-style: solid
+
+
+            
+    
+
+    .title
+        //posicion del titulo principal
+        position: absolute
+        top: 10%
+        left: calc( ((100% - $proporcion ) / 2) - 100px)
+
+        //estilo letra
+        font-size: 30px
+        color: white
+    
+    .derechos
+        position: absolute
+        color: white
+        left: 1%
+        bottom: 1%
+        font-size: 12px
+        a
+            color: white
+
+.style-input-text
+
+    outline: none
+    border: none
+    border-bottom: 1px $color-border solid

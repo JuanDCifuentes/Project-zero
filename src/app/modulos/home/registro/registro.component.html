@@ -5,9 +5,9 @@
   <span class="derechos">Imagen de <a href="https://pixabay.com/es/users/0fjd125gk87-51581/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1784245">0fjd125gk87</a> en <a href="https://pixabay.com/es//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=1784245">Pixabay</a></span>
 
   <form action="sumit">
-    <h3 class="titulo-form">Registro</h3>
+    <h3 class="titulo-form">Registrarse</h3>
     <div class="accesos-externos">
-      <div class="acceso">
+      <div class="acceso google">
         <i class="fa-brands fa-google"></i>
         <!--  solo es de referecia, no funciona -->
         <span>continuar con google</span>         
@@ -19,16 +19,22 @@
       </div>
     </div>
     <br>
-    <hr>
-    <span>or</span>
+ 
+    <div class="separador">
+      <hr>
+      <div>
+        <span>or</span>
+      </div>
+    </div>
     <br>
     
-    <input type="text" name="username" placeholder="Nombre de usuario" />
-    <input type="email" name="Email" placeholder="Email" />
-    <input type="password" name="password" placeholder="Contraseña" />
+    
+    <input type="text" class="style-input-text" name="username" placeholder="Nombre de usuario" />
+    <input type="email" class="style-input-text" name="Email" placeholder="Email"  />
+    <input  type="password" class="style-input-text" name="password" placeholder="Contraseña" />
 
     <input class="btn-registrar" type="submit" value="registrar" (click)="registrar()" />
-    <span class="login">¿ya estas registrado? <a href="#">log in</a></span>
+    <span class="login">¿Ya estas registrado?  <a [routerLink]="['/login']">Login</a></span>
   </form>
   
 </div>
