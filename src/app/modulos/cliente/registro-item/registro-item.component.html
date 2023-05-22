@@ -1,1 +1,57 @@
-<p>registro-item works!</p>
+<h2 class="h2 fw-bold text-center">{{ tituloPP }}</h2>
+<div class="accordion accordion-flush mt-5" id="items">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapseOne"
+        aria-expanded="true"
+        aria-controls="flush-collapseOne"
+      >
+        <span class="fs-5"> titulo </span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapseOne"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingOne"
+      data-bs-parent="#items"
+    >
+      <div class="accordion-body mt-3 mb-3">
+        <textarea class="form-control" name="" id="" rows="3"></textarea>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingtwo">
+      <button
+        class="accordion-button collapsed"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#flush-collapsetwo"
+        aria-expanded="true"
+        aria-controls="flush-collapsetwo"
+      >
+        <span class="fs-5"> resumen </span>
+      </button>
+    </h2>
+    <div
+      id="flush-collapsetwo"
+      class="accordion-collapse collapse"
+      aria-labelledby="flush-headingtwo"
+      data-bs-parent="#items"
+    >
+      <div class="accordion-body mb-3">
+        <textarea class="form-control" name="" id="" rows="3"></textarea>
+      </div>
+    </div>
+
+	 
+  </div>
+</div>
+<div class="">
+  <button type="button" class="btn btn-outline-success m-3">Guardar</button>
+  <button type="button" class="btn btn-outline-info">Enviar</button>
+</div>

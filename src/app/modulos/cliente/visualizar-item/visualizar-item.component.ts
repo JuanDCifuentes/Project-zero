@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./visualizar-item.component.sass']
 })
 export class VisualizarItemComponent {
-
+    title: string = "algo para mostrar"
 }
