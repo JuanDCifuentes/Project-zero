@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro-item.component.sass']
 })
 export class RegistroItemComponent {
+  tituloPP:String= "Mosaicos para la relizacion de"
 
 }

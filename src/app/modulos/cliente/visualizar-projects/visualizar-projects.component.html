@@ -1,0 +1,57 @@
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 w-75 ">
+    <div class="col">
+        <div class="card">
+            <div class="card-body" style="scroll-behavior: inherit;">
+                <h4 class="card-title" >algo</h4>
+                <p class="card-text lh-sm text-wrap" data-spy="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, doloribus quibusdam architecto, exercitationem incidunt voluptates sunt fugiat obcaecati maxime quis quas consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card" data-bs-toggle="modal" data-bs-target="#modalId">
+            <div class="rounded-circle m-4 p-5 shadow-sm">
+                <img class="card-img-top " src="../../../../assets/plus.png" alt="Card image cap">
+            </div>
+            <div class="card-body">
+                <h4 class="card-title text-center">añadir proyecto</h4>
+            </div>
+        </div>
+    </div>
+
+</div>
+  
+<!-- Modal Body -->
+<div class="modal fade" id="modalId" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog" aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="modalTitleId">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="mb-3">
+                      <label for="title-project" class="form-label">TITULO</label>
+                      <input type="text"
+                        class="form-control" name="title-project" id="title-project"  placeholder="proyecto para...">
+                    </div>
+                    <div class="mb-3">
+                      <label for="description" class="form-label">descripcion</label>
+                      <textarea class="form-control" name="description" #desciption rows="3"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Optional: Place to the bottom of scripts
+<script>
+    const myModal = new bootstrap.Modal(document.getElementById('modalId'), options)
+
+</script> -->

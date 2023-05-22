@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-sugerecias',
+  selector: 'app-sugerencias',
   templateUrl: './sugerecias.component.html',
   styleUrls: ['./sugerecias.component.sass']
 })

@@ -6,5 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./barra.component.sass']
 })
 export class BarraComponent {
+  titulo = "Project-Zero";
 
 }

@@ -7,6 +7,8 @@ import { VisualizarItemComponent } from './visualizar-item/visualizar-item.compo
 import { SugereciasComponent } from './sugerecias/sugerecias.component';
 import { RegistroItemComponent } from './registro-item/registro-item.component';
 import { BarraComponent } from './barra/barra.component';
+import { VisualizarProjectsComponent } from './visualizar-projects/visualizar-projects.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -16,11 +18,17 @@ import { BarraComponent } from './barra/barra.component';
     VisualizarItemComponent,
     SugereciasComponent,
     RegistroItemComponent,
-    BarraComponent
+    BarraComponent,
+    VisualizarProjectsComponent
   ],
   imports: [
     CommonModule,
+    FormsModule,
     ClienteRoutingModule
+  ],
+  exports: [
+    VisualizarItemComponent,
+    FormsModule
   ]
 })
 export class ClienteModule { }
