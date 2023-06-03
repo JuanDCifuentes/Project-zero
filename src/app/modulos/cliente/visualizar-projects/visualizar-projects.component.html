@@ -1,9 +1,12 @@
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 g-4 w-75 ">
-    <div class="col">
-        <div class="card">
+    <div class="col" *ngFor="let project of proyectos; index as i">
+        <div class="card" (click)="EditarProyecto(i)">
             <div class="card-body" style="scroll-behavior: inherit;">
-                <h4 class="card-title" >algo</h4>
-                <p class="card-text lh-sm text-wrap" data-spy="scroll">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, doloribus quibusdam architecto, exercitationem incidunt voluptates sunt fugiat obcaecati maxime quis quas consequuntur Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <h4 class="card-title" >{{project.title}}</h4>
+                <p class="card-text lh-sm text-wrap" data-spy="scroll">{{project.descripcion}}</p>
+            </div>
+            <div class="card-footer">
+                {{project.infoProject.state}}
             </div>
         </div>
     </div>
@@ -13,7 +16,7 @@
                 <img class="card-img-top " src="../../../../assets/plus.png" alt="Card image cap">
             </div>
             <div class="card-body">
-                <h4 class="card-title text-center">añadir proyecto</h4>
+                <h4 class="card-title text-center">Añadir proyecto</h4>
             </div>
         </div>
     </div>
@@ -33,17 +36,17 @@
                     <div class="mb-3">
                       <label for="title-project" class="form-label">TITULO</label>
                       <input type="text"
-                        class="form-control" name="title-project" id="title-project"  placeholder="proyecto para...">
+                        class="form-control" name="title-project" id="title-project"  placeholder="proyecto para..." [(ngModel)]="titulo">
                     </div>
                     <div class="mb-3">
                       <label for="description" class="form-label">descripcion</label>
-                      <textarea class="form-control" name="description" #desciption rows="3"></textarea>
+                      <textarea class="form-control" name="descripcion" [(ngModel)]="descrip"  rows="3"></textarea>
                     </div>
                 </form>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save</button>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal" (click)="guardar()" >Save</button>
             </div>
         </div>
     </div>

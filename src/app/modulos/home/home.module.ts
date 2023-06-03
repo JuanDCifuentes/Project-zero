@@ -18,6 +18,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     HomeRoutingModule,
     FormsModule
-  ]
+  ],
+  exports: [FormsModule]
 })
 export class HomeModule { }

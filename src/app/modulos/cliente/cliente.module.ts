@@ -8,7 +8,7 @@ import { SugereciasComponent } from './sugerecias/sugerecias.component';
 import { RegistroItemComponent } from './registro-item/registro-item.component';
 import { BarraComponent } from './barra/barra.component';
 import { VisualizarProjectsComponent } from './visualizar-projects/visualizar-projects.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 
@@ -23,11 +23,14 @@ import { FormsModule } from '@angular/forms';
   ],
   imports: [
     CommonModule,
+    ReactiveFormsModule,
     FormsModule,
     ClienteRoutingModule
   ],
   exports: [
+    CommonModule,
     VisualizarItemComponent,
+    ReactiveFormsModule,
     FormsModule
   ]
 })

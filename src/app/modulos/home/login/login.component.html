@@ -28,10 +28,11 @@
       </div>
       <br>
       
-      <input type="email" class="style-input-text" name="Email" placeholder="Email"  />
-      <input  type="password" class="style-input-text" name="password" placeholder="Contraseña" />
-  
-      <input class="btn-registrar" type="submit" value="registrar" />
+      <input type="text" class="style-input-text" name="Email" placeholder="Email" [(ngModel)]="email"  />
+      <input  type="password" class="style-input-text" name="password" placeholder="Contraseña"[(ngModel)]="contrasena" />
+
+      <span>{{mesageError}}</span>
+      <input class="btn-registrar" type="submit" value="ingresar" (click)="iniciarSesion()"/>
       <span class="login">¿deseas registrarte?  <a [routerLink]="['/registrar']">Registrar</a></span>
     </form>
     

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 @Component({
   selector: 'app-barra',
@@ -6,6 +6,16 @@ import { Component } from '@angular/core';
   styleUrls: ['./barra.component.sass']
 })
 export class BarraComponent {
+  
+  @Output() ListarEvent = new EventEmitter<boolean>();  
+  
+
   titulo = "Project-Zero";
 
+  listarProject(){
+    this.ListarEvent.emit(true)
+  }
+
 }
+
+

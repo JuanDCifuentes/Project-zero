@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+import { UserModel } from 'src/app/models/user.model';
+import { UserService } from 'src/app/service/userService/user.service';
 
 @Component({
   selector: 'app-registro',
@@ -6,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./registro.component.sass']
 })
 export class RegistroComponent {
+
+  constructor(private userService: UserService, private route: Router) {
+  
+  }
 
   title = "JOTA-PROTECT"
 
@@ -15,7 +22,10 @@ export class RegistroComponent {
 
   registrar(){
 
-    
+    let newUser = new UserModel;
+    newUser.setvaluePrimary(this.UserName,this.email,this.password);
+    this.userService.registrarUser(newUser);
+    this.route.navigate(['/login']);
 
   }
 

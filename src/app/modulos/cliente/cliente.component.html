@@ -1,11 +1,11 @@
-<app-barra></app-barra>
+<app-barra (ListarEvent)="VerProjects($event)"></app-barra>
 
-<app-visualizar-projects *ngIf="visualizar; else editarProject" class="d-md-flex d-ms-flex justify-content-center m-5 vw-100 "></app-visualizar-projects>
+<app-visualizar-projects *ngIf="visualizar; else editarProject" class="d-md-flex d-ms-flex justify-content-center m-5 vw-100 " (viewMPEvent)="wievEditarProyecto($event)" (projectM)="edicionProject($event)"></app-visualizar-projects>
 
 <ng-template #editarProject>
   <div class="d-lg-flex justify-content-start align-self-start ">
-    <app-registro-item class="h-50 w-75 m-5 p-3 shadow rounded-3"></app-registro-item>
-    <app-sugerencias class=" h-50 m-5 ms-0 w-25 p-2 shadow rounded-3"></app-sugerencias>
+    <app-registro-item class="h-50 w-75 m-5 p-3 shadow rounded-3" [projectItems]="project" (wievProject)="VerProjects($event)"></app-registro-item>
+    <app-sugerencias class=" h-50 m-5 ms-0 w-25 p-2 shadow rounded-3" [projectComent]="project"></app-sugerencias>
   </div>
   <app-visualizar-item></app-visualizar-item>
 </ng-template>
