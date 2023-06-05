@@ -73,6 +73,7 @@ export class VisualizarProjectsComponent implements OnInit {
     Err => {console.error(Err);}
     
     );
+    this.projectM.emit(this.newPorject);
     this.viewMPEvent.emit(false);
   }
 
